@@ -8,7 +8,7 @@
 
 2. Start the Flask server by running the file `app.py` that exists in the map `/backend`.
 
-4. When the server is running, open a new terminal in your IDE of choice.
+4. When the server is running, open a new terminal.
     *(In Visual Studio Code this can be done with either clicking "Terminal" in the top left corner and choosing "New Terminal", 
     or by clicking the plus icon in the terminal tab below the code field)*
 
