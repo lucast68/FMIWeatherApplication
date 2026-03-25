@@ -66,10 +66,10 @@ def train_model():
 
     #Saves trained model and scaler
     torch.save(model.state_dict(), 'trained_model/weather_model.pth')
-    print("Model sparad som 'trained_model/weather_model.pth'")
+    print("Model saved as 'trained_model/weather_model.pth'")
 
     scaler.save("trained_model/scaler.pth")
-    print("Scaler sparad som 'trained_model/scaler.pth'")
+    print("Scaler saved as 'trained_model/scaler.pth'")
 
 if __name__ == "__main__":
     train_model()
