@@ -23,3 +23,5 @@
 ## Results
 
 <img width="1199" height="630" alt="image" src="https://github.com/user-attachments/assets/ce0de283-dd0d-4c5e-aeeb-28550175660c" />
+
+The model predicts short-term weather patterns with good accuracy, as shown above. Performance decreases over longer periods due to the dynamic nature of time-series data.
