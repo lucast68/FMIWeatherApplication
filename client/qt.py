@@ -156,7 +156,7 @@ class WeatherWindow(QWidget):
 
         ax.plot(timestamps, actuals, marker="o", label="Actual temperature")
         ax.plot(timestamps, temps, marker="o", label="Predicted temperature")
-        ax.set_title("Predicted vs actual temperature next 60 min")
+        ax.set_title("Predicted vs Actual temperature next 60 min")
         ax.set_xlabel("Time")
         ax.set_ylabel(f"Temperature ({units.get('temperature_prediction_next_hour', '°C')})")
         ax.legend()
