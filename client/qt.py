@@ -75,7 +75,7 @@ class WeatherWindow(QWidget):
 
         #Buttons to fetch weather data or predictions
         btn_layout = QHBoxLayout()
-        btn1 = QPushButton("Fetch weather")
+        btn1 = QPushButton("Fetch weather data")
         btn1.clicked.connect(self.load_weather)
         btn2 = QPushButton("Fetch prediction")
         btn2.clicked.connect(self.load_prediction)
