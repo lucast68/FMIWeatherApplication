@@ -139,7 +139,7 @@ class WeatherWindow(QWidget):
         text = ""
         for row in rows:
             for k, v in row.items():
-                name = COLUMN_NAME.get(k, k)
+                name = COLUMN_NAMES.get(k, k)
                 unit = units.get(k, "")
                 text += f"{name}: {v} {unit}\n"
             text += "-" * 40 + "\n"
