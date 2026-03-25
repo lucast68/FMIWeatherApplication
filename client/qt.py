@@ -54,7 +54,7 @@ class WeatherWindow(QWidget):
         place = "Helsinki, Kaisaniemi"
         API = "Meteorological Institute (opendata.fmi.fi)"
 
-        #Highes row with location and API info
+        #Highest row with location and API info
         header_row = QHBoxLayout()
         self.location_label = QLabel(f"Location: {place}")
         self.location_label.setStyleSheet("font-size:12px;")
