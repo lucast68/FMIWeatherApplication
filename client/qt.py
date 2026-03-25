@@ -52,7 +52,7 @@ class WeatherWindow(QWidget):
         left_layout = QVBoxLayout()
 
         place = "Helsinki, Kaisaniemi"
-        API = "Meteorologiska institutet (opendata.fmi.fi)"
+        API = "Meteorological Institute (opendata.fmi.fi)"
 
         #Highes row with location and API info
         header_row = QHBoxLayout()
@@ -75,9 +75,9 @@ class WeatherWindow(QWidget):
 
         #Buttons to fetch weather data or predictions
         btn_layout = QHBoxLayout()
-        btn1 = QPushButton("Hämta väder")
+        btn1 = QPushButton("Fetch weather")
         btn1.clicked.connect(self.load_weather)
-        btn2 = QPushButton("Hämta prediktion")
+        btn2 = QPushButton("Fetch prediction")
         btn2.clicked.connect(self.load_prediction)
 
         btn_layout.addWidget(btn1)
@@ -109,9 +109,9 @@ class WeatherWindow(QWidget):
         text = ""
         for row in rows:
             for k, v in row.items():
-                sv_name = COLUMN_NAMES_SV.get(k, k)
+                name = COLUMN_NAMES.get(k, k)
                 unit = units.get(k, "")
-                text += f"{sv_name}: {v} {unit}\n"
+                text += f"{name}: {v} {unit}\n"
             text += "-" * 40 + "\n"
 
         self.output.setPlainText(text)
