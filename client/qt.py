@@ -58,7 +58,7 @@ class WeatherWindow(QWidget):
         header_row = QHBoxLayout()
         self.location_label = QLabel(f"Plats: {place}")
         self.location_label.setStyleSheet("font-size:12px;")
-        self.api_label = QLabel(f"Väder API: {API}")
+        self.api_label = QLabel(f"Weather API: {API}")
         self.api_label.setStyleSheet("font-size:12px;")
 
         header_row.addWidget(self.location_label)
