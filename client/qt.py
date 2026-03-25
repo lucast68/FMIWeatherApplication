@@ -154,11 +154,11 @@ class WeatherWindow(QWidget):
         temps = [r["temperature_prediction_next_hour"] for r in rows]
         actuals = [r["temperature"] for r in rows]
 
-        ax.plot(timestamps, actuals, marker="o", label="Faktisk temperatur")
-        ax.plot(timestamps, temps, marker="o", label="Predikterad temperatur")
-        ax.set_title("Prediktion vs faktisk temperatur nästa 60 min")
-        ax.set_xlabel("Tidpunkt")
-        ax.set_ylabel(f"Temperatur ({units.get('temperature_prediction_next_hour', '°C')})")
+        ax.plot(timestamps, actuals, marker="o", label="Actual temperature")
+        ax.plot(timestamps, temps, marker="o", label="Predicted temperature")
+        ax.set_title("Predicted vs actual temperature next 60 min")
+        ax.set_xlabel("Time")
+        ax.set_ylabel(f"Temperature ({units.get('temperature_prediction_next_hour', '°C')})")
         ax.legend()
         ax.grid(True)
 
