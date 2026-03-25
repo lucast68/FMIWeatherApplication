@@ -20,4 +20,6 @@
 
 7. If you want to train the model again you can run `train_model.py`, that is located in the `/utils` folder.
 
+## Results
+
 <img width="1199" height="630" alt="image" src="https://github.com/user-attachments/assets/ce0de283-dd0d-4c5e-aeeb-28550175660c" />
