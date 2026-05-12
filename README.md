@@ -17,7 +17,7 @@
 
 5. Then run the Qt client with the command: 
    ```
-   client/qt.py
+   ./client/qt.py
    ```
    to open the graphical interface.
 
