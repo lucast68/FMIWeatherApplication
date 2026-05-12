@@ -8,7 +8,7 @@
 
 2. Start the Flask server by running the file `app.py` that exists in the map `/backend`.
    ```
-   python ./backend/app.py
+   ./backend/app.py
    ```
 
 4. When the server is running, open a new terminal.
@@ -17,7 +17,7 @@
 
 5. Then run the Qt client with the command: 
    ```
-   python client/qt.py
+   client/qt.py
    ```
    to open the graphical interface.
 
